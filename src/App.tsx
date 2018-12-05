@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { loadModel, isModelLoaded } from "./Model";
+import { EmotionRegister } from "./EmotionRegister";
 
 class App extends Component {
   state = {
@@ -19,6 +20,8 @@ class App extends Component {
     return (
       <div className="App">
         <p>Model loaded : {isModelLoaded ? "it is loaded" : "not yet"}</p>
+        <EmotionRegister emotion="negative" />
+        <EmotionRegister emotion="positive" />
       </div>
     );
   }

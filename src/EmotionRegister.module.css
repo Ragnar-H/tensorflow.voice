@@ -1,0 +1,17 @@
+.emotionRegister {
+  border-radius: 3px;
+  padding: 14px 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  text-transform: capitalize;
+}
+
+.positive {
+  background-color: var(--base1);
+}
+
+.negative {
+  background-color: var(--base2);
+}
